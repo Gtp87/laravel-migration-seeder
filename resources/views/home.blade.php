@@ -4,11 +4,10 @@
 @foreach ($trains as $train)
 <ul>
     <li>Company: {{$train->company}}</li>
+    <li>Train Code: {{$train->train_code}}</li>
     <li>Departure: {{$train->departure_station}}</li>
     <li>Arrival: {{$train->arrival_station}}</li>
     <li>Departure date: {{$train->departure_date}}</li>
-
-
 </ul>
     
 @endforeach  
