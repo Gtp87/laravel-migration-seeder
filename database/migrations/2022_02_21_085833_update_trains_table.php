@@ -15,7 +15,7 @@ class UpdateTrainsTable extends Migration
     {
         Schema::table('trains', function (Blueprint $table) {
             $table->date('departure_date')->nullable()->after('arrival_station');
-            $table->date('destination_date')->nullable()->after('departure_time');
+            $table->date('arrival_date')->nullable()->after('departure_time');
         });
     }
 
