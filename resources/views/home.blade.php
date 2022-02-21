@@ -25,6 +25,7 @@
             Treno cancellato
         </li>
         @endif
+    <button><a href="{{route('show', $train)}}">View Train</a></button>
 </ul>
     
 @endforeach  
